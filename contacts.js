@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 
-router.get('/getall', (req, res) =>{
+router.get('/', (req, res) =>{
   const collection = db.getDbStatus().collection('contacts')
   collection.find().toArray((err, docs) => {
   	if(err){
@@ -13,7 +13,7 @@ router.get('/getall', (req, res) =>{
   });
 });
 
-router.post('/add',(req,res) =>{
+router.post('/',(req,res) =>{
 	const newContact = req.body;
 	const collection = db.getDbStatus().collection('contacts')
 	const userCollection = db.getDbStatus().collection('users')
@@ -29,7 +29,7 @@ router.post('/add',(req,res) =>{
 });
 })
 
-router.get('/getContacts', (req, res) =>{
+router.get('/:id', (req, res) =>{
   const collection = db.getDbStatus().collection('contacts')
   const userCollection = db.getDbStatus().collection('users')
 	userCollection.findOne({userId:'asaryasv@gmail.com'},(usErr,user) => {
@@ -41,5 +41,21 @@ router.get('/getContacts', (req, res) =>{
   });
 });
 });
+
+/*router.put('/',(req,res) => {
+	const newContact = req.body;
+	const collection = db.getDbStatus().collection('contacts')
+	const userCollection = db.getDbStatus().collection('users')
+	userCollection.findOne({userId:'asaryasv@gmail.com'},(usErr,user) => {
+		newContact.userId = user._id;
+	collection.insertOne(newContact,(err,dbRes) => {
+		if(err){
+			throw err;
+		}
+		console.log("1 records inserted");
+		res.send({user: dbRes})
+	});
+});
+})*/
 
 module.exports = router

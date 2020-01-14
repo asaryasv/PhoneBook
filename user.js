@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 
-router.get('/getall', (req, res) =>{
+router.get('/', (req, res) =>{
   const collection = db.getDbStatus().collection('users')
   collection.find().toArray((err, docs) => {
   	if(err){
