@@ -1,0 +1,16 @@
+Users
+
+user id/email id
+password
+fname
+lname
+
+
+contacts
+
+fname 
+lname
+email id
+address
+contactnumbers:[]
+userId
