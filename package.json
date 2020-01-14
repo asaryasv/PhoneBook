@@ -1,0 +1,20 @@
+{
+  "name": "phoonebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "\"phone",
+    "book\"",
+    "\"contact\""
+  ],
+  "author": "Arya SA",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.4.1"
+  }
+}
