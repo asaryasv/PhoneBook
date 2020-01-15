@@ -60,7 +60,7 @@ How to run API(s)
   
     url: localhost:3000/contacts
     type: GET
-    Note: add x-access-toke : token from the login response in headers & all parameters in payload are required parameters
+    Note: add x-access-toke : token from the login response in headers
     
   5)Add Contact for Logged In user
     
@@ -73,7 +73,7 @@ How to run API(s)
             address:'address',
             contactnumbers:[{number:'12'},{number:'34"}]
             }
-    Note: add x-access-toke : token from the login response in headers
+    Note: add x-access-toke : token from the login response in headers & all parameters in payload are required parameters
     
    6)Get Contacts of Logged in user
    
