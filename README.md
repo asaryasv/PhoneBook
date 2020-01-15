@@ -77,7 +77,7 @@ How to run API(s)
     
    6)Get Contacts of Logged in user
    
-     url: localhost:3000/contacts/getcontact
+     url: localhost:3000/contacts/getcontact?pageSize=1&pageNum=5
      type: GET
      Note: add x-access-toke : token from the login response in headers
     
