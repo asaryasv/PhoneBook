@@ -1,4 +1,4 @@
-const errors = require('./errors.js')
+const errors = require('./error.js')
 
 const invalidInput = (req)=> new Promise(function(resolve,reject){
 	if(1){

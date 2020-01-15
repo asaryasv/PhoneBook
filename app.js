@@ -7,6 +7,7 @@ const contacts = require('./routes/contacts.js');
 
 module.exports = () =>{
 	const app = express();
+	app.set('secretKey','ApHoneBoKSERtCwe');
 	app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
 	app.use('/api', router);

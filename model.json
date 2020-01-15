@@ -1,6 +1,6 @@
 Users
 
-user id/email id
+emailId
 password
 fname
 lname
@@ -10,7 +10,7 @@ contacts
 
 fname 
 lname
-email id
+emailId
 address
 contactnumbers:[]
 userId
