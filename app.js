@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const router = require('./router.js');
-const user = require('./user.js');
-const contacts = require('./contacts.js');
+const router = require('./routes/router.js');
+const user = require('./routes/user.js');
+const contacts = require('./routes/contacts.js');
 
 module.exports = () =>{
 	const app = express();
