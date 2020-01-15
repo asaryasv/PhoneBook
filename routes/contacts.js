@@ -7,5 +7,6 @@ const validateLogin = require('../middlewares/authValidation.js');
 router.get('/', validateLogin, contactController.getContacts);
 router.post('/', validateLogin, contactController.addContacts);
 router.get('/getcontact', validateLogin, contactController.getLoggedInUserContact);
+router.put('/:id', validateLogin, validateLogin, contactController.updateContact);
 
 module.exports = router
